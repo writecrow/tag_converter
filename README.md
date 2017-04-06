@@ -1,17 +1,13 @@
-# TagConverter
+# Corpus-tagged Text Converter
 
 A PHP library for converting files tagged with corpus metadata to JSON or PHP.
 
 [![Circle CI](https://circleci.com/gh/markfullmer/tag-converter.svg?style=shield)](https://circleci.com/gh/markfullmer/tag-converter)
 
-**Requires**: PHP 5.3+
-
-**Requires**: Composer
-
 **Lead Developer**: [@markfullmer](https://github.com/markfullmer)
 
 ## Basic Usage
-The included `index.php` file contains conversion form to try out.
+The included `demo/index.php` file contains a conversion form demonstration.
 
 Installation
 ```bash
@@ -19,7 +15,7 @@ git clone git@github.com:markfullmer/tag-converter.git
 cd tag-converter
 composer install
 ```
-As shown in `index.php`, add the library to your file & the Composer autoloader:
+As shown in `demo/index.php`, add the library to your file & the Composer autoloader:
 
 ```php
 require 'vendor/autoload.php';
@@ -52,6 +48,14 @@ underscores, and hypens.
 4. Spaces at the beginning at end of tag names or tag values are ignored;
 spaces within tag values will be preserved
 5. Everything not wrapped in ```<``` and ```>``` will be considered "text"
+
+| Status | Tag Example | Explanation
+| --- | --- | --- |
+| Good | <MyTag:SomeText> | |
+| Good | <My Tag:Some Text> | Spaces in tag names & values OK |
+| Good | < My Tag : Some Text > | Spaces padding tag names & values OK|
+| Good | < My-Tag : Some_Text > | Underscores & hyphens OK|
+| Bad | < My/Tag : Some:Text > | Other characters not OK|
 
 ## History
 
