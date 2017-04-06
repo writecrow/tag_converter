@@ -1,0 +1,16 @@
+{
+    "name": "tag2json/tag2json",
+    "description": "Converts tagged textfiles to JSON",
+    "type": "library",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": { "markfullmer\\TagConverter\\": ["src/", "test/"] }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4"
+    },
+    "suggest": {
+        "ext-mbstring": "For best performance",
+        "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+    }
+}
