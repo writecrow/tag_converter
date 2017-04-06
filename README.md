@@ -51,11 +51,11 @@ spaces within tag values will be preserved
 
 | Status | Tag Example | Explanation
 | --- | --- | --- |
-| Good | <MyTag:SomeText> | |
-| Good | <My Tag:Some Text> | Spaces in tag names & values OK |
-| Good | < My Tag : Some Text > | Spaces padding tag names & values OK|
-| Good | < My-Tag : Some_Text > | Underscores & hyphens OK|
-| Bad | < My/Tag : Some:Text > | Other characters not OK|
+| Good | ```<MyTag:SomeText>``` | |
+| Good | ```<My Tag:Some Text>``` | Spaces in tag names & values OK |
+| Good | ```< My Tag : Some Text >``` | Spaces padding tag names & values OK|
+| Good | ```< My-Tag : Some_Text >``` | Underscores & hyphens OK|
+| Bad | ```< My/Tag : Some:Text >``` | Other characters not OK|
 
 ## History
 
