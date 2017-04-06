@@ -12,7 +12,8 @@ The included `index.php` file contains conversion form to try out.
 
 Installation
 ```bash
-cd tagconverter
+git clone git@github.com:markfullmer/tag-converter.git
+cd tag-converter
 composer install
 ```
 As shown in `index.php`, add the library to your file & the Composer autoloader:
@@ -21,13 +22,12 @@ As shown in `index.php`, add the library to your file & the Composer autoloader:
 require 'vendor/autoload.php';
 
 use markfullmer\TagConverter\TagConverter;
-
-```php
+```
 
 Then pass a string of text into the class:
 ```php
 $text = new TagConverter('<MyTag: 123>My tagged text here');
-```php
+```
 
 Then choose which of the formats you want to convert to:
 ```php
@@ -38,7 +38,7 @@ echo $json;
 $php = $text->php();
 echo $php;
 // Returns array('MyTag' => '123', 'text' => 'My tagged text here')
-```php
+```
 
 ## Expected input format
 The corpus style tagging syntax expected by the library is defined as follows:
@@ -61,20 +61,3 @@ Unit Tests can be run (after ```composer install```) simply by executing:
 ```bash
 phpunit
 ```
-
-/*
- * Copyright (c) 2017 Mark Fullmer <mfullmer@gmail.com>
- *
- * This script is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The GNU General Public License can be found at
- * http://www.gnu.org/copyleft/gpl.html.
- *
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- */
