@@ -4,7 +4,7 @@
 
 A PHP library for converting files tagged with corpus metadata to JSON or PHP.
 
-[![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag-converter/master/demo/tagging-example.png)]
+![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag-converter/master/demo/tagging-example.png)
 
 ## Basic Usage
 The included `demo/index.php` file contains a conversion form demonstration.
