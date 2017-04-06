@@ -1,10 +1,10 @@
 # Corpus-tagged Text Converter
 
-A PHP library for converting files tagged with corpus metadata to JSON or PHP.
-
 [![Circle CI](https://circleci.com/gh/markfullmer/tag-converter.svg?style=shield)](https://circleci.com/gh/markfullmer/tag-converter)
 
-**Lead Developer**: [@markfullmer](https://github.com/markfullmer)
+A PHP library for converting files tagged with corpus metadata to JSON or PHP.
+
+[![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag-converter/master/demo/tagging-example.png)]
 
 ## Basic Usage
 The included `demo/index.php` file contains a conversion form demonstration.
