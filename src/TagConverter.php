@@ -38,9 +38,9 @@ class TagConverter {
     }
 
     // Remove tags and parse each line into an array element.
-    $untagged = preg_replace("/<(.*): (.*)>/", "", $text);
+    $untagged = preg_replace("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_ -]*)>/", "", $text);
     $clean = '';
-    $tags = preg_split('/((\r?\n)|(\n?\r))/', $untagged);
+    $tags = preg_split('/((\r?\n)|(\n?\r))/', htmlspecialchars($untagged, ENT_NOQUOTES));
     $end = end($tags);
     foreach ($tags as $key => $line) {
       if ($line != '') {

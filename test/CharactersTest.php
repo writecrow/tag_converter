@@ -5,17 +5,17 @@ namespace markfullmer\TagConverter;
 /**
  * Test basic strings are converted correctly.
  */
-class BasicTest extends \PHPUnit_Framework_TestCase {
+class CharactersTest extends \PHPUnit_Framework_TestCase {
 
   /**
    * Provides data.
    */
   public function basicDataProvider() {
     return array(
-      'Readme usage' => array(
-        'input' => '<MyTag: 123>My tagged text here',
-        'json'  => '{"MyTag":"123","text":"My tagged text here"}',
-        'php' => array('MyTag' => '123', 'text' => 'My tagged text here'),
+      'Non-allowed characters are ignored' => array(
+        'input' => '<My/Tag: 12:3>My tagged text here',
+        'json'  => '{"text":"&lt;My\/Tag: 12:3&gt;My tagged text here"}',
+        'php' => array('text' => '&lt;My/Tag: 12:3&gt;My tagged text here'),
       ),
     );
   }
