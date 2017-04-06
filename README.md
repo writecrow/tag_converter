@@ -2,7 +2,10 @@
 
 A PHP library for converting files tagged with corpus metadata to JSON or PHP.
 
+[![Circle CI](https://circleci.com/gh/markfullmer/tag-converter.svg?style=shield)](https://circleci.com/gh/markfullmer/tag-converter)
+
 **Requires**: PHP 5.3+
+
 **Requires**: Composer
 
 **Lead Developer**: [@markfullmer](https://github.com/markfullmer)
