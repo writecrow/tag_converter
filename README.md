@@ -6,6 +6,11 @@ A PHP library for converting files tagged with corpus metadata to JSON or PHP.
 
 ![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag-converter/master/demo/tagging-example.png)
 
+## History
+Corpus linguistics researchers use a markup-like syntax to provide metadata
+about texts. For consumption by applications, this syntax needs to be converted
+into a more universal, machine-readable format. The format chosen was JSON.
+
 ## Basic Usage
 The included `demo/index.php` file contains a conversion form demonstration.
 
@@ -56,12 +61,6 @@ spaces within tag values will be preserved
 | Good | ```< My Tag : Some Text >``` | Spaces padding tag names & values OK|
 | Good | ```< My-Tag : Some_Text >``` | Underscores & hyphens OK|
 | Bad | ```< My/Tag : Some:Text >``` | Other characters not OK|
-
-## History
-
-Corpus linguistics researchers use a markup-like syntax to provide metadata
-about texts. For consumption by applications, this syntax needs to be converted
-into a more universal, machine-readable format. The format chosen was JSON.
 
 ## Testing
 Unit Tests can be run (after ```composer install```) simply by executing:
