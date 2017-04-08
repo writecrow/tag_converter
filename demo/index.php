@@ -23,7 +23,7 @@ echo '<!DOCTYPE html>
 
 echo '
 <div class="container">
-  <form action="http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '" method="POST">
+  <form action="//' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '" method="POST">
     <div class="row">
       <div class="six columns">
         <label for="text">Tagged text to be converted</label>
