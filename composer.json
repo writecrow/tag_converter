@@ -1,5 +1,5 @@
 {
-    "name": "tag2json/tag2json",
+    "name": "tag-converter/tag-converter",
     "description": "Converts tagged textfiles to JSON",
     "type": "library",
     "license": "GPLv2",
