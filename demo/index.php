@@ -29,20 +29,30 @@ echo '
         <label for="text">Tagged text to be converted</label>
         <textarea class="u-full-width textbox" placeholder="Place tagged text here..." name="text">' . $file . '</textarea>
       </div>
-      <div class="six columns"><input type="submit" name="json" value="Convert to JSON" />
-      <input type="submit" name="php" value="Convert to PHP" />';
+      <div class="six columns">
+      <input type="submit" name="json" value="Convert to JSON" />
+      <input type="submit" name="php" value="Convert to PHP" />
+      <input type="submit" name="xml" value="Convert to XML" />';
 
 if (isset($_POST['text']) && isset($_POST['json'])) {
-  $text = new TagConverter($_POST['text']);
-  $json = json_decode($text->json());
+  $text = TagConverter::json($_POST['text']);
+  $json = json_decode($text);
   echo '<div><pre><code>';
   echo json_encode($json, JSON_PRETTY_PRINT);
   echo '</code></pre></div>';
 }
 elseif (isset($_POST['text']) && isset($_POST['php'])) {
-  $text = new TagConverter($_POST['text']);
+  $text = TagConverter::php($_POST['text']);
   echo '<div><pre><code>';
-  print_r($text->php());
+  print_r($text);
+  echo '</code></pre></div>';
+}
+elseif (isset($_POST['text']) && isset($_POST['xml'])) {
+  $text = TagConverter::xml($_POST['text']);
+  echo '<div><pre><code>';
+  // Deal with XML-specific non-visible space for display.
+  $text = str_replace('&#xFEFF;', '', $text);
+  echo htmlspecialchars($text);
   echo '</code></pre></div>';
 }
 

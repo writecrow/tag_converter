@@ -16,6 +16,9 @@ class CharactersTest extends \PHPUnit_Framework_TestCase {
         'input' => '<My/Tag: 12:3>My tagged text here',
         'json'  => '{"text":"&lt;My\/Tag: 12:3&gt;My tagged text here"}',
         'php' => array('text' => '&lt;My/Tag: 12:3&gt;My tagged text here'),
+        'xml' => '<?xml version="1.0"?>
+<root><text>&lt;My/Tag: 12:3&gt;My tagged text here</text></root>
+',
       ),
     );
   }
@@ -25,10 +28,10 @@ class CharactersTest extends \PHPUnit_Framework_TestCase {
    *
    * @dataProvider basicDataProvider
    */
-  public function testBasic($input, $json, $php) {
-    $text = new TagConverter($input);
-    $this->assertEquals($php, $text->php());
-    $this->assertEquals($json, $text->json());
+  public function testBasic($input, $json, $php, $xml) {
+    $this->assertEquals($php, TagConverter::php($input));
+    $this->assertEquals($json, TagConverter::json($input));
+    $this->assertEquals($xml, TagConverter::xml($input));
   }
 
 }

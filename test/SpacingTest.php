@@ -41,9 +41,8 @@ class SpacingTest extends \PHPUnit_Framework_TestCase {
    * @dataProvider basicDataProvider
    */
   public function testBasic($input, $json, $php) {
-    $text = new TagConverter($input);
-    $this->assertEquals($php, $text->php());
-    $this->assertEquals($json, $text->json());
+    $this->assertEquals($php, TagConverter::php($input));
+    $this->assertEquals($json, TagConverter::json($input));
   }
 
 }
