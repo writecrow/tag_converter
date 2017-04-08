@@ -2,10 +2,12 @@
 
 namespace markfullmer\TagConverter;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test basic strings are converted correctly.
  */
-class SpacingTest extends \PHPUnit_Framework_TestCase {
+class SpacingTest extends TestCase {
 
   /**
    * Provides data.
