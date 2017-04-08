@@ -13,21 +13,10 @@ about texts. For consumption by applications, this syntax needs to be converted
 into a more universal, machine-readable format. The format chosen was JSON.
 
 ## Basic Usage
-The included `demo/index.php` file contains a conversion form demonstration.
+The included `/demo/index.php` file contains a conversion form demonstration.
 
-Installation
-```bash
-git clone git@github.com:markfullmer/tag-converter.git
-cd tag-converter
-composer install
-```
-As shown in `demo/index.php`, add the library to your file & the Composer autoloader:
-
-```php
-require 'vendor/autoload.php';
-
-use markfullmer\TagConverter\TagConverter;
-```
+Make your code aware of the TagConverter class via your favorite method (e.g.,
+`use` or `require`)
 
 Then pass a string of text into the class:
 ```php
