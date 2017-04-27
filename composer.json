@@ -1,5 +1,5 @@
 {
-    "name": "tag-converter/tag-converter",
+    "name": "writecrow/tag-converter",
     "description": "Converts tagged textfiles to JSON",
     "type": "library",
     "license": "GPLv2",
