@@ -1,8 +1,23 @@
 {
     "name": "writecrow/tag-converter",
-    "description": "Converts tagged textfiles to JSON",
+    "description": "Converts tagged textfiles to JSON, PHP or XML",
     "type": "library",
-    "license": "GPLv2",
+    "keywords": ["corpus", "conversion"],
+    "homepage": "https://tag-converter.markfullmer.com/demo/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Fullmer",
+            "email": "mark.writecrow@gmail.com",
+            "homepage": "https://markfullmer.com",
+            "role": "Developer"
+        },
+    ],
+    "support": {
+        "email": "mark.writecrow@gmail.com",
+        "issues": "https://github.com/writecrow/tag-converter/issues",
+        "source": "https://github.com/writecrow/tag-converter",
+    },
     "autoload": {
         "psr-4": { "markfullmer\\TagConverter\\": ["src/", "test/"] }
     },
