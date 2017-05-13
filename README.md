@@ -1,11 +1,11 @@
 # Corpus-tagged Text Converter
 
-[![Circle CI](https://circleci.com/gh/writecrow/tag-converter.svg?style=shield)](https://circleci.com/gh/writecrow/tag-converter)
+[![Circle CI](https://circleci.com/gh/writecrow/tag_converter.svg?style=shield)](https://circleci.com/gh/writecrow/tag_converter)
 
 A PHP library for converting files tagged with corpus metadata to JSON, PHP,
 or XML.
 
-![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag-converter/master/demo/tagging-example.png)
+![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag_converter/master/demo/tagging-example.png)
 
 ## History
 Corpus linguistics researchers use a markup-like syntax to provide metadata
@@ -52,4 +52,4 @@ spaces within tag values will be preserved
 | Bad | ```< My/Tag : Some:Text >``` | Other characters not OK|
 
 ## Testing
-Unit Tests can be run (after ```composer install```) by executing ```phpunit```
+Unit Tests can be run (after ```composer install```) by executing ```vendor/bin/phpunit```
