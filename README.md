@@ -5,7 +5,7 @@
 A PHP library for converting files tagged with corpus metadata to JSON, PHP,
 or XML.
 
-![Screenshot of Conversion](https://raw.githubusercontent.com/markfullmer/tag_converter/master/demo/tagging-example.png)
+![Screenshot of Conversion](https://raw.githubusercontent.com/writecrow/tag_converter/master/demo/tagging-example.png)
 
 ## History
 Corpus linguistics researchers use a markup-like syntax to provide metadata
