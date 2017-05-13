@@ -1,5 +1,5 @@
 {
-    "name": "writecrow/tag-converter",
+    "name": "writecrow/tag_converter",
     "description": "Converts tagged textfiles to JSON, PHP or XML",
     "type": "library",
     "keywords": ["corpus", "conversion"],
@@ -11,12 +11,12 @@
             "email": "mark.writecrow@gmail.com",
             "homepage": "https://markfullmer.com",
             "role": "Developer"
-        },
+        }
     ],
     "support": {
         "email": "mark.writecrow@gmail.com",
-        "issues": "https://github.com/writecrow/tag-converter/issues",
-        "source": "https://github.com/writecrow/tag-converter",
+        "issues": "https://github.com/writecrow/tag_converter/issues",
+        "source": "https://github.com/writecrow/tag_converter"
     },
     "autoload": {
         "psr-4": { "markfullmer\\TagConverter\\": ["src/", "test/"] }
