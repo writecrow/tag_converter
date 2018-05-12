@@ -34,6 +34,11 @@ class SpecialCharactersTest extends TestCase {
         'json'  => '{"MyTag":"123","text":"My \u201ctagged\u201d text here"}',
         'php' => array('MyTag' => '123', 'text' => 'My “tagged” text here'),
       ),
+      'Ampersand behavior' => array(
+        'input' => '<MyTag: 123>My & text here',
+        'json'  => '{"MyTag":"123","text":"My &amp; text here"}',
+        'php' => array('MyTag' => '123', 'text' => 'My &amp; text here'),
+      ),
       'Accent characters' => array(
         'input' => '<MyTag: 123>My tággéd text here',
         'json'  => '{"MyTag":"123","text":"My t\u00e1gg\u00e9d text here"}',

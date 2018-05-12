@@ -65,7 +65,7 @@ class TagConverter {
    */
   protected static function convert($original = '') {
     $array = [];
-    preg_match_all("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_ -]*)>/", $original, $matches, PREG_SET_ORDER);
+    preg_match_all("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&; -]*)>/", $original, $matches, PREG_SET_ORDER);
     if (isset($matches[0])) {
       // Store <TAGNAME: VALUE> strings.
       foreach ($matches as $key => $values) {
@@ -74,7 +74,8 @@ class TagConverter {
     }
 
     // Remove tags and parse each line into an array element.
-    $untagged = preg_replace("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_ -]*)>/", "", $original);
+    $untagged = preg_replace("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&; -]*)>/", "", $original);
+    $untagged = str_replace('<End Header>', '', $untagged);
     $clean = '';
     $lines = preg_split('/((\r?\n)|(\n?\r))/', htmlspecialchars($untagged, ENT_NOQUOTES));
     $end = end($lines);
