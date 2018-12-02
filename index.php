@@ -5,23 +5,34 @@
  * Demonstration file of using TagConverter library.
  */
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use markfullmer\TagConverter\TagConverter;
 
-$file = file_get_contents('1_A_BGD_2_M_11165.txt', FILE_USE_INCLUDE_PATH);
+$file = file_get_contents('demo_text.txt', FILE_USE_INCLUDE_PATH);
 if (isset($_POST['text'])) {
   $file = $_POST['text'];
 }
 echo '<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+<style>
+  .textbox { height:-webkit-fill-available; }
+  pre > code {
+    white-space: pre-line;
+  }
+</style>
 </head>
 <body>';
 
 echo '
+<div class="container">
+<h1>Tagged corpus text converter</h1>
+<a href="https://github.com/writecrow/tag_converter">Source code</a>
+<hr />
+</div>
 <div class="container">
   <form action="//' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '" method="POST">
     <div class="row">

@@ -51,11 +51,26 @@ class TagConverter {
    *   An XML object.
    */
   public static function xml($original) {
-    $array = array_flip(self::convert($original));
-    $xml = new \SimpleXMLElement('<root/>');
-    array_walk_recursive($array, array($xml, 'addChild'));
-    return $xml->asXML();
+    $array = self::convert($original);
+    $xml_data = new \SimpleXMLElement('<?xml version="1.0"?><data></data>');
+    self::array_to_xml($array, $xml_data);
+    return $xml_data->asXML();
   }
+
+  public static function array_to_xml($data, &$xml_data) {
+    foreach ($data as $key => $value) {
+      if( is_numeric($key) ){
+        $key = 'item'. $key;
+      }
+      if(is_array($value)) {
+        $subnode = $xml_data->addChild($key);
+        self::array_to_xml($value, $subnode);
+      } else {
+        $xml_data->addChild("$key",htmlspecialchars("$value"));
+      }
+    }
+  }
+
 
   /**
    * Convert tag format into PHP array.
@@ -65,16 +80,30 @@ class TagConverter {
    */
   protected static function convert($original = '') {
     $array = [];
-    preg_match_all("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&; -]*)>/", $original, $matches, PREG_SET_ORDER);
+    preg_match_all("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&;, -]*)>/", $original, $matches, PREG_SET_ORDER);
     if (isset($matches[0])) {
       // Store <TAGNAME: VALUE> strings.
       foreach ($matches as $key => $values) {
-        $array[trim($values[1])] = trim($values[2]);
+        $values[2] = trim($values[2]);
+        $multiple_terms = preg_grep('/;/', explode("\n", $values[2]));
+        if (!empty($multiple_terms)) {
+          $terms = preg_split('/;/', $values[2]);
+          foreach ($terms as $i => &$term) {
+            if (empty($term)) {
+              unset($terms[$i]);
+            }
+            $term = (string) trim($term);
+          }
+        }
+        else {
+          $terms = (string) trim($values[2]);
+        }
+        $array[trim($values[1])] = $terms;
       }
     }
 
     // Remove tags and parse each line into an array element.
-    $untagged = preg_replace("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&; -]*)>/", "", $original);
+    $untagged = preg_replace("/<([a-zA-Z0-9_ -]*):([a-zA-Z0-9_&;, -]*)>/", "", $original);
     $untagged = str_replace('<End Header>', '', $untagged);
     $clean = '';
     $lines = preg_split('/((\r?\n)|(\n?\r))/', htmlspecialchars($untagged, ENT_NOQUOTES));
