@@ -1,6 +1,6 @@
 <?php
 
-namespace markfullmer\TagConverter;
+namespace writecrow\TagConverter;
 
 /**
  * Class TagConverter.
@@ -9,7 +9,7 @@ namespace markfullmer\TagConverter;
  *
  * @author markfullmer <mfullmer@gmail.com>
  *
- * @link https://github.com/markfullmer/tag-converter/
+ * @link https://github.com/writecrow/tag-converter/
  *
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  */

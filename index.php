@@ -7,7 +7,7 @@
 
 require 'vendor/autoload.php';
 
-use markfullmer\TagConverter\TagConverter;
+use writecrow\TagConverter\TagConverter;
 
 $file = file_get_contents('demo_text.txt', FILE_USE_INCLUDE_PATH);
 if (isset($_POST['text'])) {

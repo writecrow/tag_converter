@@ -3,7 +3,7 @@
     "description": "Converts tagged textfiles to JSON, PHP or XML",
     "type": "library",
     "keywords": ["corpus", "conversion"],
-    "homepage": "https://tag-converter.markfullmer.com/demo/",
+    "homepage": "https://tag-converter.markfullmer.com/",
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +19,7 @@
         "source": "https://github.com/writecrow/tag_converter"
     },
     "autoload": {
-        "psr-4": { "markfullmer\\TagConverter\\": ["src/", "test/"] }
+        "psr-4": { "writecrow\\TagConverter\\": ["src/", "test/"] }
     },
     "require-dev": {
         "phpunit/phpunit": "~4"
