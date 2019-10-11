@@ -85,7 +85,7 @@ class TagConverter {
     $array = [];
     // Only search for tags within header section, if demarcated.
     $header_split = preg_split('/<End Header>/', $original);
-    preg_match_all("/<([a-zA-Z0-9_ -\(\)\/]*):([a-zA-Z0-9_&;, \-\(\)\/]*)>/", $original, $matches, PREG_SET_ORDER);
+    preg_match_all("/<([a-zA-Z0-9_ -\(\)\/]*):([a-zA-Z0-9._&;, \-\(\)\/]*)>/", $original, $matches, PREG_SET_ORDER);
     if (isset($matches[0])) {
       // Store <TAGNAME: VALUE> strings.
       foreach ($matches as $key => $values) {

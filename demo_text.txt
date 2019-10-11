@@ -1,17 +1,39 @@
-﻿<ID: 11165>
-<Country: BGD>
-<Assignment: 1>
-<Draft: A>
-<Semester in School: 2>
+﻿﻿<Student ID: 10410>
+<Country: China>
+<Institution: University of Arizona>
+<Course: ENGL 106>
+<Mode: Face to Face>
+<Length: 16 weeks>
+<Assignment: DE>
+<Draft: F>
+<Year in School: 1>
 <Gender: M>
-<Term writing: Fall 2015>
-<College: Engineering>
-<Program: Engineering; Creative Writing>
-<TOEFL-total: 118>
-<TOEFL-reading: 23>
-<TOEFL-listening: 22>
-<TOEFL-speaking: 25>
-<TOEFL-writing: 26>
-Sed ut perspiciatis unde omnis iste natus error sit.
+<Course Year: 2018>
+<Course Semester: Spring>
+<College: Colleges Letters Arts Science>
+<Program: No Major Selected Ltr Art Sci>
+<Proficiency Exam: TOEFL>
+<Exam total: 73.0>
+<Exam reading: 17.0>
+<Exam listening: 18.0>
+<Exam speaking: 17.0>
+<Exam writing: 21.0>
+<Instructor: 1018>
+<Section: 1039>
+<End Header>
 
-Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+English:106-005
+Unit1 Project: Description and Explanation
+Language Change in my Blog Writing
+When the author write about Sociolinguistics, he always write about the variation about language. I write the blog more focus on personal interpret. Original(Eble reading): Sociolinguistics is the study of how language serves and is shaped by the social nature of human beings. Re-write(Blog): Social-linguistics is the description about language in social, and it will change as the place. Language is not for individuals, and it is for social and all people.
+I want to change the blog sound more like a speech, because the blog show my personal ideas to others. I can use the speak way to write for tell audiences what I want to say.
+Original (Eble reading): Sociolinguists also study dialect - any regional, social or ethnic variety of a language.
+Rewrite(Blog): Dialect is change as the place by environment, and people speak same language will get variable in words and gramme.
+I need use the different punctuation for connect the sentence and use them in sentence as we need them. Because the different punctuation will change the article better.
+Original Eble reading Another pronunciation variant that correlates with a social category is heard in New Orleans.
+Rewrite(Blog): People can speak language for their personal idea that can create the new language for their personal need in daily life.
+Use different gramme will change the Blog and article better. It will become more interesting. I will write the blog simple and easy to understand by others.I will be using simple English to write for audiences. Because simple writing can directly show theirs meaning to other.
+Original Eble reading The basic premise of sociolinguistics is that language is variable and changing.
+Rewrite(Blog): Sociolinguistics is change as the place by environment, and people speak same language will get variable in words and gramme. For example, You all and You guy is the example for same sentence use the different words.
+Use the different form to write Blog will help the read deeply understand. Use different words will help the Blog more wonderful. I will use the different personal example to let audiences understand what we want to tell others. Because personal example can help reader get understand what you want to tell others without mislead.
+Total word length: 787 words
