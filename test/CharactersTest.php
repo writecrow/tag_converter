@@ -19,7 +19,7 @@ class CharactersTest extends TestCase {
         'json'  => '{"text":"&lt;My\/Tag: 12:3&gt;My tagged text here"}',
         'php' => array('text' => '&lt;My/Tag: 12:3&gt;My tagged text here'),
         'xml' => '<?xml version="1.0"?>
-<root><text>&lt;My/Tag: 12:3&gt;My tagged text here</text></root>
+<data><text>&amp;lt;My/Tag: 12:3&amp;gt;My tagged text here</text></data>
 ',
       ),
     );

@@ -24,11 +24,6 @@ class SpacingTest extends TestCase {
         'json'  => '{"My Tag":"12 3","text":"My tagged text here"}',
         'php' => array('My Tag' => '12 3', 'text' => 'My tagged text here'),
       ),
-      'Hyphens in tag name & values' => array(
-        'input' => '< My-Tag : 12-3 >My tagged text here',
-        'json'  => '{"My-Tag":"12-3","text":"My tagged text here"}',
-        'php' => array('My-Tag' => '12-3', 'text' => 'My tagged text here'),
-      ),
       'Underscores in tag name & values' => array(
         'input' => '< My_Tag : 12_3 >My tagged text here',
         'json'  => '{"My_Tag":"12_3","text":"My tagged text here"}',

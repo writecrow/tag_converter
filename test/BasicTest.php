@@ -19,7 +19,7 @@ class BasicTest extends TestCase {
         'json'  => '{"MyTag":"123","text":"My tagged text here"}',
         'php' => array('MyTag' => '123', 'text' => 'My tagged text here'),
         'xml' => '<?xml version="1.0"?>
-<root><MyTag>123</MyTag><text>My tagged text here</text></root>
+<data><MyTag>123</MyTag><text>My tagged text here</text></data>
 ',
       ),
     );
