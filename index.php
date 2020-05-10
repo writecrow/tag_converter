@@ -13,19 +13,8 @@ $file = file_get_contents('demo_text.txt', FILE_USE_INCLUDE_PATH);
 if (isset($_POST['text'])) {
   $file = $_POST['text'];
 }
-echo '<!DOCTYPE html>
-<html>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-<style>
-  .textbox { height:-webkit-fill-available; }
-  pre > code {
-    white-space: pre-line;
-  }
-</style>
-</head>
-<body>';
+
+include 'head.html';
 
 echo '
 <div class="container">
