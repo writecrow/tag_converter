@@ -60,7 +60,6 @@ echo '
       </div>
     </div>
   </form>
-</div>
 <h3>Design & behavior</h3>
 <ol>
 <li>Tags must be wrapped in <code>&lt;</code> and <code>&gt;</code></li>
@@ -112,5 +111,6 @@ echo '
 </tr>
 </tbody>
 </table>
+</div>
 </body>
 </html>';
