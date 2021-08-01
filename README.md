@@ -43,12 +43,15 @@ underscores, and hypens.
 spaces within tag values will be preserved
 5. Everything not wrapped in ```<``` and ```>``` will be considered "text"
 
+
 | Status | Tag Example | Explanation
 | --- | --- | --- |
 | Good | ```<MyTag:SomeText>``` | |
 | Good | ```<My Tag:Some Text>``` | Spaces in tag names & values OK |
 | Good | ```< My Tag : Some Text >``` | Spaces padding tag names & values OK|
 | Good | ```< My-Tag : Some_Text >``` | Underscores & hyphens OK|
+| Good | ```< My-Tag : Value 1 | Value 2 >``` | Pipe separators for multiple values|
+| Good | ```< My-Tag : Value 1 ; Value 2 >``` | Semicolon separators for multiple values|
 | Bad | ```< My/Tag : Some:Text >``` | Other characters not OK|
 
 ## Testing

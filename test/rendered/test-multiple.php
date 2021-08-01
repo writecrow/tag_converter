@@ -5,13 +5,13 @@
  * Demonstration file of using TagConverter library.
  */
 
-require 'vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 use writecrow\TagConverter\TagConverter;
 
-$file = file_get_contents('test/data/file-with-multiple-students.txt', FILE_USE_INCLUDE_PATH);
+$file = file_get_contents('../data/file-with-multiple-students.txt', FILE_USE_INCLUDE_PATH);
 
-$text = TagConverter::json($file);
+$text = TagConverter::php($file);
 
   echo '<div><pre><code>';
   print_r($text);
