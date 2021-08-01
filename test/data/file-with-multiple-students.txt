@@ -37,12 +37,12 @@
 <Heritage Spanish Speaker: NA>
 <Year in School: 2>
 <Gender: M>
-<College: School B>
-<Program: English>
+<College: Second College>
+<Program: Second Program>
 <Proficiency Exam: TOEFL>
 <Exam total: 89.0>
-<Exam reading: 22.0>
-<Exam listening: 25.0>
+<Exam reading: 25.0>
+<Exam listening: 22.0>
 <Exam speaking: 21.0>
 <Exam writing: 21.0>
 </Student 1>
@@ -52,3 +52,9 @@
 Author-Spolsky. <name> <name>
 Class section-Eng106
 In my re-write passage, I followed some rules of the blog and informal writing. Generally, this article is written for myself, so the goal of the rewriting article is to help me better understand this article.
+For example, in the first sentence, I delete "in situ" and "in vivo," because these words are not the keywords, and they didn't influence me to understand the sentence. Also, I didn't know what exactly these words mean. In the second sentence, I change "we" to "I," because the original passage is from a professor who needs to illustrate this idea to the public. But I wrote this blog for myself, use "I" and t can make to feel closer to this article, and it also can remind me that it is a blog for myself, not a boring professional article.
+In the second paragraph, I delete "(like English or French or Amharic)" because it is meaningless to me. What's more, I changed the inverted sentence and clause to a simple sentence with a phrase no matter, because it is better for me to know the meaning of this sentence.
+In the third paragraph, I broke the original sentence into two simple sentences because clause sentence is so formal and not direct to read, while a simple sentence is more informal and accessible for me to understand.
+In the second part, named "Hong Kong," I made a big change of the original passage. In the whole paragraph, I delete the example of Jerusalem, Toronto, Brussels, and other cities because as "half a Hong Kong people," I could already get the main idea by pointing just one example of Hong Kong. And I am more familiar with the word "standard Mandarin" than "Putonghua," so I delete "Putonghua," it is more understandable for me. On the other hand, I change the clause with ", whose" to the simple word with "because," as a clause, a sentence is more formal than the simple sentence. And also I change the word "sovereignty" to the word "government," although these two words have the same meaning, but the government is more acceptable for me and less formal in writing.
+In the last two paragraphs of dialect part, I made many changes to the sentence structure. In the first sentence, I put the reason at the beginning of my rewritten sentences with "because of" than put reason at the end of the sentences with a phrase "as a result of" in the original sentence. And I changed the word "discipline" to "officially" to make it more informal. What's more, at the end of the first paragraph of dialect part, I changed the short clause "locality where the language was spoken" to a simple "adjective+ noun" model, which is more informal and more directly to myself. In the last paragraph, I changed two brackets into a sentence as an example. Because I think the content in those brackets are essential for me to understand the original passage, so I make an individual sentence for it, also I delete those particular name for those areas because those names are not necessary for me to understand the main idea.
+
