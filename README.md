@@ -43,7 +43,6 @@ underscores, and hypens.
 spaces within tag values will be preserved
 5. Everything not wrapped in ```<``` and ```>``` will be considered "text"
 
-
 | Status | Tag Example | Explanation
 | --- | --- | --- |
 | Good | ```<MyTag:SomeText>``` | |
