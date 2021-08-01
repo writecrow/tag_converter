@@ -1,0 +1,28 @@
+<Student ID: 10410>
+<Country: China>
+<Institution: University of Arizona>
+<Course: ENGL 106>
+<Mode: Face to Face>
+<Length: 16 weeks>
+<Assignment: DE>
+<Draft: F>
+<Year in School: 1>
+<Gender: M>
+<Course Year: 2018>
+<Course Semester: Spring>
+<College: Colleges Letters Arts Science>
+<Program: No Major Selected Ltr Art Sci>
+<Proficiency Exam: TOEFL>
+<Exam total: 73.0>
+<Exam reading: 17.0>
+<Exam listening: 18.0>
+<Exam speaking: 17.0>
+<Exam writing: 21.0>
+<Instructor: 1018>
+<Section: 1039>
+<End Header>
+
+English:106-005
+Unit1 Project: Description and Explanation
+Language Change in my Blog Writing
+When the author write about Sociolinguistics, he always write about the variation about language.

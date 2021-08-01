@@ -85,13 +85,14 @@ class TagConverter {
     $array = [];
     // Only search for tags within header section, if demarcated.
     $header_split = preg_split('/<End Header>/', $original);
-    preg_match_all("/<([a-zA-Z0-9_ -\(\)\/]*):([a-zA-Z0-9._&;, \-\(\)\/]*)>/", $original, $matches, PREG_SET_ORDER);
+    preg_match_all("/<([a-zA-Z0-9_ -\(\)\/]*):([a-zA-Z0-9._&;|, \-\(\)\/]*)>/", $original, $matches, PREG_SET_ORDER);
     if (isset($matches[0])) {
       // Store <TAGNAME: VALUE> strings.
       foreach ($matches as $key => $values) {
         $values[2] = trim($values[2]);
-        $multiple_terms = preg_grep('/;/', explode("\n", $values[2]));
-        if (!empty($multiple_terms)) {
+        $semicolon_separated = preg_grep('/;/', explode("\n", $values[2]));
+        $pipe_separated = preg_grep('/\|/', explode("\n", $values[2]));
+        if (!empty($semicolon_separated)) {
           $terms = preg_split('/;/', $values[2]);
           foreach ($terms as $i => &$term) {
             if (empty($term)) {
@@ -100,13 +101,31 @@ class TagConverter {
             $term = (string) trim($term);
           }
         }
-        else {
-          $terms = (string) trim($values[2]);
+        elseif (!empty($pipe_separated)) {
+          $terms = preg_split('/\|/', $values[2]);
+          foreach ($terms as $i => &$term) {
+            if (empty($term)) {
+              unset($terms[$i]);
+            }
+            $term = (string) trim($term);
+          }
         }
-        $array[trim($values[1])] = $terms;
+        else {
+          $terms = [trim($values[2])];
+        }
+
+        // Handle scenario where there are multiple instances of the same key.
+        $category = trim($values[1]);
+        if (isset($array[$category])) {
+          $array[$category] = array_merge($array[$category], $terms);
+        }
+        else {
+          $array[$category] = $terms;
+        }
       }
     }
 
+    // Retrieve & store text (everything other than the headers).
     // Remove tags and parse each line into an array element.
     if (isset($header_split[1])) {
       $untagged = $header_split[1];
@@ -129,6 +148,13 @@ class TagConverter {
     // Add a new array element, 'text', to the array. If nothing else, the
     // $array array will now contain the 'text' element with an empty string.
     $array['text'] = $clean;
+
+    // Reduce items that have a single array value into a string.
+    foreach ($array as $key => $value) {
+      if (is_array($value) && count($value) == 1) {
+        $array[$key] = $value[0];
+      }
+    }
     return $array;
   }
 
