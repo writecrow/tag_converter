@@ -1,0 +1,54 @@
+<Text>
+<Student IDs: 10527|10528>
+<Group ID: NA>
+<Institution: University of Arizona>
+<Course: ENGL 106>
+<Mode: Face to Face>
+<Length: 16 weeks>
+<Assignment: DE>
+<Draft: F>
+<Course Year: 2019>
+<Course Semester: Spring>
+<Instructor: 1019>
+<Section: 1057>
+</Text>
+
+<Student 1>
+<Student ID: 10527>
+<Country: NA>
+<L1: NA>
+<Heritage Spanish Speaker: NA>
+<Year in School: 1>
+<Gender: F>
+<College: Eller College of Management>
+<Program: Pre-Economics>
+<Proficiency Exam: TOEFL>
+<Exam total: 85.0>
+<Exam reading: 21.0>
+<Exam listening: 24.0>
+<Exam speaking: 20.0>
+<Exam writing: 20.0>
+</Student 1>
+
+<Student 2>
+<Student ID: 10528>
+<Country: CHN>
+<L1: Chinese>
+<Heritage Spanish Speaker: NA>
+<Year in School: 2>
+<Gender: M>
+<College: School B>
+<Program: English>
+<Proficiency Exam: TOEFL>
+<Exam total: 89.0>
+<Exam reading: 22.0>
+<Exam listening: 25.0>
+<Exam speaking: 21.0>
+<Exam writing: 21.0>
+</Student 1>
+<End Header>
+
+2019-2-19. 10:00am
+Author-Spolsky. <name> <name>
+Class section-Eng106
+In my re-write passage, I followed some rules of the blog and informal writing. Generally, this article is written for myself, so the goal of the rewriting article is to help me better understand this article.
