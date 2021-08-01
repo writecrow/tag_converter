@@ -61,5 +61,56 @@ echo '
     </div>
   </form>
 </div>
+<h3>Design & behavior</h3>
+<ol>
+<li>Tags must be wrapped in <code>&lt;</code> and <code>&gt;</code></li>
+<li>Tag names and tag values may only alphanumeric characters, spaces, underscores, and hypens.</li>
+<li>Tag names must be separated from tag values by a <code>:</code></li>
+<li>Spaces at the beginning at end of tag names or tag values are ignored; spaces within tag values will be preserved</li>
+<li>Items with multiple values may be indicated by a pipe (|) character or semicolon (;)</li>
+<li>Everything not wrapped in <code>&lt;</code> and <code>&gt;</code> will be considered "text"</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Tag Example</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Good</td>
+<td><code>&lt;MyTag:SomeText&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Good</td>
+<td><code>&lt;My Tag:Some Text&gt;</code></td>
+<td>Spaces in tag names &amp; values OK</td>
+</tr>
+<tr>
+<td>Good</td>
+<td><code>&lt; My Tag : Some Text &gt;</code></td>
+<td>Spaces padding tag names &amp; values OK</td>
+</tr>
+<tr>
+<td>Good</td>
+<td><code>&lt; My-Tag : Some_Text &gt;</code></td>
+<td>Underscores &amp; hyphens OK</td>
+</tr>
+<tr>
+<td>Good</td>
+<td><code>&lt; My-Tag : First value | Second value&gt;</code></td>
+<td>Pipe or semicolon used to indicate multiple values</td>
+</tr>
+<tr>
+<td>Bad</td>
+<td><code>&lt; My/Tag : Some:Text &gt;</code></td>
+<td>Other characters not OK</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>';
